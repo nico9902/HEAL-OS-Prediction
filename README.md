@@ -47,4 +47,47 @@ HEAL-OS-Prediction/
 │   ├── utils_network.py
 │
 ├── figures/
-    ├── proposed_method.pdf
+    ├── Proposed Approach.pdf
+```
+
+## 🧠 Method
+
+The workflow includes:
+	1.	NER fine-tuning
+Using the MedBITR3+ checkpoint (BioBIT-based) with focal loss for class imbalance.
+	2.	Embedding extraction
+We extract the contextualized embeddings of entity tokens from the NER transformer.
+	3.	Hierarchical Attention (HEAL)
+	•	Token-level attention
+	•	Sentence-level attention
+	•	Shared attention weights
+	4.	Survival prediction
+DeepHit model with calibration, ranking, and likelihood losses.
+
+## 💾 Data
+
+The clinical reports used in this study are not publicly distributable due to patient privacy restrictions.
+
+The NER system used in this work is available in a dedicated repository:
+[Italian-NSCLC-NER](https://github.com/nico9902/Italian-NSCLC-NER).
+
+## 🚀 How to Run
+
+1. Install dependencies:
+   ```
+   pip install -r requirements.txt
+  ```
+2. Train the NER model and extract embeddings: use
+3. Train the HEAL model using random search to optimize hyperparameters:
+   ```
+  python -m scripts.main \
+    --random_search \
+    --rs_iteration 100 \
+    --end_fold 10 \
+    --attention_mode hierarchical \
+    --embedding_path "<path>" \
+    --prediction_path "<path>" \
+    --label_path "<path>" \
+    --kfold_path "<path>" \
+    --survival_file_path "<path-to-survival.xlsx>"
+  ```
