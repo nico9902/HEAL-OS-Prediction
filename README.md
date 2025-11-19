@@ -77,7 +77,7 @@ The NER system used in this work is available in a dedicated repository:
 ```
    pip install -r requirements.txt
 ```
-2. Train the NER model and extract embeddings: use
+2. Train the NER model and extract embeddings: use code in the repository [Italian-NSCLC-NER](https://github.com/nico9902/Italian-NSCLC-NER)
 3. Train the HEAL model using random search to optimize hyperparameters:
 ```
   python -m scripts.main \
