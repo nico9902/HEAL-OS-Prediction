@@ -92,7 +92,7 @@ The NER system used in this work is available in a dedicated repository:
     --survival_file_path "<path-to-survival.xlsx>"
 ```
 
-The trained model can highlight sentences and words in a report based on their clinical relevance for prognosis. For example, see the following heatmap ![heatmap](figures/heatmap.png).
+The trained model can highlight sentences and words in a report based on their clinical relevance for prognosis. For example, see the following heatmap. ![heatmap](figures/heatmap.png)
 
 ## 🎓 Citation
 
