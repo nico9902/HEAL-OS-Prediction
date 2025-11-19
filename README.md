@@ -92,3 +92,23 @@ The NER system used in this work is available in a dedicated repository:
     --kfold_path "<path>" \
     --survival_file_path "<path-to-survival.xlsx>"
 ```
+
+🎓 Citation
+
+If you use this code, please cite our work:
+```
+@article{paolo2025hierarchical,
+  title={Hierarchical embedding attention for overall survival prediction in lung cancer from unstructured EHRs},
+  author={Paolo, Domenico and Greco, Carlo and Cortellini, Alessio and Ramella, Sara and Soda, Paolo and Bria, Alessandro and Sicilia, Rosa},
+  journal={BMC Medical Informatics and Decision Making},
+  volume={25},
+  number={1},
+  pages={169},
+  year={2025},
+  publisher={Springer}
+}
+```
+
+📜 License
+
+MIT License
