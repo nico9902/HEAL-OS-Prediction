@@ -92,7 +92,9 @@ The NER system used in this work is available in a dedicated repository:
     --survival_file_path "<path-to-survival.xlsx>"
 ```
 
-The trained model can highlight sentences and words in a report based on their clinical relevance for prognosis. For example, see the following heatmap. ![heatmap](figures/heatmap.png)
+The trained model can highlight both sentences and individual words within a clinical report based on their relevance to the prognostic outcome. Hence, Sentence-level attention assigns a weight to each sentence in the patient’s reports, focusing only on the most clinically significant words of the sentence (i.e., entities detected by the NER system).  
+The heatmap below illustrates this mechanism: each sentence is assigned an attention weight, and within each sentence only the most relevant clinical entities are selected.  
+![heatmap](figures/heatmap.png)
 
 ## 🎓 Citation
 
