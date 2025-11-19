@@ -1,2 +1,26 @@
 # HEAL-OS-Prediction
-This is a code implemention of the framework proposed in the paper "Hierarchical Embedding Attention for Overall Survival Prediction in Lung Cancer from Unstructured EHRs".
+
+This repository contains the official implementation of the paper:
+
+**"Hierarchical Embedding Attention for Overall Survival Prediction in Lung Cancer from Unstructured EHRs"**  
+Authors: Domenico Paolo, Carlo Greco, Alessio Cortellini, Sara Ramella, Paolo Soda,  
+Alessandro Bria, Rosa Sicilia.
+
+---
+
+## 🔍 Overview
+
+HEAL is an interpretable deep learning framework for **prognosis prediction** from **unstructured EHRs**.  
+It integrates:
+
+- A **multiclass NER** system trained on 25 lung-cancer–specific entity types.
+- A **hierarchical attention mechanism** that aggregates entity embeddings at:
+  - token level  
+  - sentence level  
+- A **DeepHit-based network** for survival prediction.
+
+The method significantly outperforms manually extracted clinical features and baseline models.
+
+---
+
+## 📦 Repository Structure
