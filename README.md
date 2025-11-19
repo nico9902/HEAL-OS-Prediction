@@ -65,7 +65,7 @@ We extract the contextualized embeddings of entity tokens from the NER transform
 DeepHit model with calibration, ranking, and likelihood losses.
 ```
 
-![Proposed Method](figures/Proposed%20Approach.pdf)
+![Proposed Method](figures/Proposed20%Approach.pdf)
 
 ## 💾 Data
 
