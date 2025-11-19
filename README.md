@@ -47,7 +47,8 @@ HEAL-OS-Prediction/
 │   ├── utils_network.py
 │
 ├── figures/
-    ├── Proposed Approach.pdf
+    ├── Proposed_Approach.png
+	├── Heatmap.png
 ```
 
 ## 🧠 Method
@@ -65,7 +66,7 @@ We extract the contextualized embeddings of entity tokens from the NER transform
 DeepHit model with calibration, ranking, and likelihood losses.
 ```
 
-![Proposed Method](figures/Proposed20%Approach.pdf)
+![Proposed Method](figures/Proposed_Approach.png)
 
 ## 💾 Data
 
@@ -95,7 +96,9 @@ The NER system used in this work is available in a dedicated repository:
     --survival_file_path "<path-to-survival.xlsx>"
 ```
 
-🎓 Citation
+The trained model can highlight sentences and words in a report based on their clinical relevance for prognosis. For example, see this ![heatmap](figures/Heatmap.png).
+
+## 🎓 Citation
 
 If you use this code, please cite our work:
 ```
@@ -111,6 +114,6 @@ If you use this code, please cite our work:
 }
 ```
 
-📜 License
+## 📜 License
 
 This project is licensed. Please review the [LICENSE](LICENSE) file for more information.
