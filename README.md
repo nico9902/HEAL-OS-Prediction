@@ -113,4 +113,4 @@ If you use this code, please cite our work:
 
 📜 License
 
-This project is licensed. Please review the License file for more information.
+This project is licensed. Please review the ![LICENSE](LICENSE) file for more information.
