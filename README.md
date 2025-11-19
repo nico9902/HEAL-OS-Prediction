@@ -74,12 +74,12 @@ The NER system used in this work is available in a dedicated repository:
 ## 🚀 How to Run
 
 1. Install dependencies:
-   ```
+```
    pip install -r requirements.txt
-  ```
+```
 2. Train the NER model and extract embeddings: use
 3. Train the HEAL model using random search to optimize hyperparameters:
-   ```
+```
   python -m scripts.main \
     --random_search \
     --rs_iteration 100 \
@@ -90,4 +90,4 @@ The NER system used in this work is available in a dedicated repository:
     --label_path "<path>" \
     --kfold_path "<path>" \
     --survival_file_path "<path-to-survival.xlsx>"
-  ```
+```
