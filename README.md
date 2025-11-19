@@ -9,8 +9,6 @@ This repository contains the official implementation of the paper:
 Authors: Domenico Paolo, Carlo Greco, Alessio Cortellini, Sara Ramella, Paolo Soda,  
 Alessandro Bria, Rosa Sicilia.
 
----
-
 ## 🔍 Overview
 
 HEAL is an interpretable deep learning framework for **prognosis prediction** from **unstructured EHRs**.  
@@ -23,8 +21,6 @@ It integrates:
 - A **DeepHit-based network** for survival prediction.
 
 The method significantly outperforms manually extracted clinical features and baseline models.
-
----
 
 ## 📦 Repository Structure
 ```
