@@ -51,11 +51,11 @@ HEAL-OS-Prediction/
 ```
 
 ## 🧠 Method
-
+```
 The workflow includes:
 	1.	NER fine-tuning
 Using the MedBITR3+ checkpoint (BioBIT-based) with focal loss for class imbalance.
-	2.	Embedding extraction
+	2.	NER Embedding extraction
 We extract the contextualized embeddings of entity tokens from the NER transformer.
 	3.	Hierarchical Attention (HEAL)
 	•	Token-level attention
@@ -63,6 +63,7 @@ We extract the contextualized embeddings of entity tokens from the NER transform
 	•	Shared attention weights
 	4.	Survival prediction
 DeepHit model with calibration, ranking, and likelihood losses.
+```
 
 ## 💾 Data
 
