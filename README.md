@@ -27,3 +27,24 @@ The method significantly outperforms manually extracted clinical features and ba
 ---
 
 ## 📦 Repository Structure
+```
+HEAL-OS-Prediction/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+│
+├── src/
+│   ├── networks.py       # hierarchical attention + DeepHit architecture
+│   ├── datasets.py       # NER embeddings
+│   ├── import_data.py
+│   ├── losses.py         # DeepHit Loss
+│   ├── main_clinical.py  # train the model based on manually-extracted clinical features
+│   ├── main.py           # train HEAL
+│   ├── utils_data.py
+│   ├── utils_model.py
+│   ├── utils_eval.py
+│   ├── utils_network.py
+│
+├── figures/
+    ├── proposed_method.pdf
